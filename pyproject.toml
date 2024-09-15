@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student-exam-performance-predictor"
+version = "0.1.0"
+description = "A machine learning model to predict student exam performance based on various features."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Moiz Syed", email = "moizeali@gmail.com" }
+]
+keywords = ["mlops", "machine-learning", "flask", "education", "student-performance"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.2",
+    "pytest-cov",
+    "black",
+    "mypy"
+]
+
+[project.urls]
+homepage = "https://github.com/moizeali/student-exam-performance-predictor"
+documentation = "https://github.com/moizeali/student-exam-performance-predictor#readme"
+source = "https://github.com/moizeali/student-exam-performance-predictor"
+issues = "https://github.com/moizeali/student-exam-performance-predictor/issues"
