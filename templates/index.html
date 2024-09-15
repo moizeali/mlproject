@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Predictor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .header-container {
+            margin-top: 80px;
+            text-align: center;
+        }
+        .header-container h1 {
+            font-size: 3.5rem; /* Increased font size */
+            color: #343a40;
+            font-weight: bold;
+        }
+        .header-container p {
+            font-size: 1.5rem; /* Increased font size */
+            color: #6c757d;
+            margin-top: 20px;
+        }
+        .start-btn {
+            margin-top: 50px;
+        }
+        .start-btn a {
+            font-size: 1.25rem; /* Increased button text size */
+            padding: 15px 40px; /* Increased padding for larger button */
+        }
+        .image-section img {
+            max-width: 80%; /* Reduced the width to 80% of container */
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            /* Responsive styles for smaller screens */
+            .header-container h1 {
+                font-size: 2.5rem;
+            }
+            .header-container p {
+                font-size: 1.2rem;
+            }
+            .start-btn a {
+                font-size: 1.1rem;
+            }
+            .image-section img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container header-container">
+        <h1>Welcome to the Student Exam Performance Predictor</h1>
+        <p>This tool helps predict a student's math score based on various factors such as gender, parental education level, ethnicity, and performance in reading and writing tests.</p>
+
+        <!-- Call to action button -->
+        <div class="text-center start-btn">
+            <a href="{{ url_for('predict_datapoint') }}" class="btn btn-primary btn-lg">Start Prediction</a>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Student Exam Performance Predictor. All rights reserved.</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
