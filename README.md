@@ -102,23 +102,16 @@ This architecture ensures a seamless interaction between users and the underlyin
 
    The project also supports dependency management using `pyproject.toml`. If you prefer using this approach for managing dependencies and project configuration, you can refer to the `pyproject.toml` file for setting up the project environment, as follows:
 
-   
-
    ```toml
-
    [build-system]
-
    requires = ["setuptools>=42", "wheel"]
-
    build-backend = "setuptools.build_meta"
-
 
    [project]
    name = "student-exam-performance-predictor"
    description = "A machine learning model to predict student exam performance based on various features."
    readme = "README.md"
    requires-python = ">=3.8"
-
 
 ## Running the Application
 
