@@ -1,0 +1,8 @@
+{
+    "name": "student-exam-performance-predictor",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "python -m pip install -r requirements-minimal.txt",
+      "vercel-build": "python -m pip install -r requirements-minimal.txt"
+    }
+}
